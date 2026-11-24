@@ -6,19 +6,21 @@ Public **binary-only** distribution repository for the private two-player Shamer
 
 ## Install
 
-When the first tested, signed release is published, open [Releases](https://github.com/Shamer-Music/ShamerScape-Binaries/releases/latest) and choose the installer for your computer:
+Open [Releases → latest](https://github.com/Shamer-Music/ShamerScape-Binaries/releases/latest) and download the installer for your computer:
 
 - **Windows x64:** `shamerscape-<version>-windows-installer.exe`
 - **Mac with Apple Silicon (M1/M2/M3/etc.):** `shamerscape-<version>-macos-arm64.dmg`
 - **Intel Mac:** `shamerscape-<version>-macos-intel.dmg`
 
-These installers have not been published yet. Do **not** distribute a development preview as the finished player release.
+The other files in each release (`latest.json`, `*.app.tar.gz`, `*-windows-x86_64.exe`) are signed **update packages** that the launcher downloads by itself. You don't need to install them by hand.
+
+Signed testing releases are published (v0.2.0 and v0.2.1 as of November 23, 2026). They are **early test builds**: private-server login on macOS has not been verified yet, and macOS builds are not Apple-notarized, so Gatekeeper may ask for confirmation the first time.
 
 ## Updates
 
-Once signed releases are activated, the launcher checks the latest version before starting the game. Its updater accepts only packages with a valid signature from the trusted ShamerScape signing key.
+An installed signed release checks the latest version before starting the game. Its updater accepts only packages with a valid signature from the trusted ShamerScape signing key.
 
-The latest update index will live at:
+The latest update index is:
 
 https://github.com/Shamer-Music/ShamerScape-Binaries/releases/latest/download/latest.json
 
